@@ -30,6 +30,13 @@ ENABLE_CPUSETS := true
 
 TARGET_NO_BOOTLOADER := true
 
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := false
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
+TARGET_GCC_VERSION_ARM64 := 5.3
+
 # Inline kernel building
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-5.3-kernel/bin
 KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
